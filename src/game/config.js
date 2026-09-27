@@ -125,13 +125,13 @@ export const TRAFFIC_CONFIG = {
     Collision prediction only starts
     when car is actually close enough.
   */
-  collisionCheckDistance: 30,
+  collisionCheckDistance: 20,
 
   /*
     Predictive takeover threshold
     in seconds.
   */
-  ttcDangerSeconds: 2.0,
+  ttcDangerSeconds: 1.6,
 
   /*
     Approximate front bumper

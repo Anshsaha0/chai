@@ -111,9 +111,9 @@ test('actual frame callbacks publish current and recycled positions and retain c
     ctx.hasEnteredDetectionZone.current = false;
     childFrame(); assert.equal(game.reason, 'COLLISION');
   }
-  // React earlier: about 1.9 seconds before impact at a standstill.
+  // React earlier: about 1.4 seconds before impact at a standstill.
   game.reason = null; game.speed = 0;
-  car.z = -17; car.relativeSpeed = 24 / 3.6;
+  car.z = -14; car.relativeSpeed = 24 / 3.6;
   childFrame(); assert.equal(game.reason, 'COLLISION');
   // Adjacent lanes and cars moving away must not cause false takeovers.
   game.reason = null; game.speed = 0; ctx.laneRef.current = 4.5;
