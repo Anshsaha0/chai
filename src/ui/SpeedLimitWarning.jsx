@@ -1,3 +1,4 @@
+import { assetUrl } from "../assetUrl.js";
 import { useEffect, useRef } from "react";
 import { setMediaGain } from "../game/audio/soundManager.js";
 import { useGameStore } from "../store/useGameStore.js";
@@ -35,7 +36,7 @@ export default function SpeedLimitWarning() {
 
       <audio
         ref={audioRef}
-        src="/audio/speed_limit.mp3"
+        src={assetUrl("audio/speed_limit.mp3")}
         preload="auto"
       />
 

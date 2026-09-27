@@ -1,8 +1,9 @@
+import { assetUrl } from "../assetUrl.js";
 export const PLAYER_MODEL = {
-  body: "/models/car/body.glb",
+  body: assetUrl("models/car/body.glb"),
 
   steeringWheel:
-    "/models/car/steering_wheel.glb",
+    assetUrl("models/car/steering_wheel.glb"),
 
   bodyRotationY: Math.PI,
 
@@ -85,12 +86,12 @@ export const VEHICLE_CONFIG = {
 
 
 export const TRAFFIC_MODELS = [
-  "/models/traffic/car1.glb",
-  "/models/traffic/car2.glb",
-  "/models/traffic/car3.glb",
-  "/models/traffic/car4.glb",
-  "/models/traffic/car5.glb",
-  "/models/traffic/car6.glb",
+  assetUrl("models/traffic/car1.glb"),
+  assetUrl("models/traffic/car2.glb"),
+  assetUrl("models/traffic/car3.glb"),
+  assetUrl("models/traffic/car4.glb"),
+  assetUrl("models/traffic/car5.glb"),
+  assetUrl("models/traffic/car6.glb"),
 ];
 
 

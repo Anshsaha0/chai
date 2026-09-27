@@ -1,3 +1,4 @@
+import { assetUrl } from "../../assetUrl.js";
 import {
   useLoader,
 } from "@react-three/fiber";
@@ -9,7 +10,7 @@ export default function SkyBackdrop() {
   const texture =
     useLoader(
       THREE.TextureLoader,
-      "/environment/sky/sky.png"
+      assetUrl("environment/sky/sky.png")
     );
 
 

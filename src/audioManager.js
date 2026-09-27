@@ -1,14 +1,15 @@
+import { assetUrl } from "./assetUrl.js";
 import { setMediaGain } from "./game/audio/soundManager.js";
 
 class AudioManager {
   constructor() {
     // MP3 files are served from /public/audio
-    this.driving = new Audio("/audio/driving.mp3");
-    this.brake = new Audio("/audio/brake.mp3");
-    this.passing = new Audio("/audio/car_passing_by.mp3");
-    this.honk = new Audio("/audio/honk.mp3");
-    this.endScreen = new Audio("/audio/end_screen.mp3");
-    this.drowsinessAlarm = new Audio("/audio/alarm.mp3");
+    this.driving = new Audio(assetUrl("audio/driving.mp3"));
+    this.brake = new Audio(assetUrl("audio/brake.mp3"));
+    this.passing = new Audio(assetUrl("audio/car_passing_by.mp3"));
+    this.honk = new Audio(assetUrl("audio/honk.mp3"));
+    this.endScreen = new Audio(assetUrl("audio/end_screen.mp3"));
+    this.drowsinessAlarm = new Audio(assetUrl("audio/alarm.mp3"));
     this.drowsinessAlarmActive = false;
 
     // Driving sound loops

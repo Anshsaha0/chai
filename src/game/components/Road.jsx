@@ -1,3 +1,4 @@
+import { assetUrl } from "../../assetUrl.js";
 import {
   useMemo,
   useRef,
@@ -136,7 +137,7 @@ export default function Road() {
   const diffuse =
     useLoader(
       THREE.TextureLoader,
-      "/environment/road/asphalt_track_diff_4k.jpg"
+      assetUrl("environment/road/asphalt_track_diff_4k.jpg")
     );
 
 
@@ -146,7 +147,7 @@ export default function Road() {
   const normal =
     useLoader(
       EXRLoader,
-      "/environment/road/asphalt_track_nor_gl_4k.exr"
+      assetUrl("environment/road/asphalt_track_nor_gl_4k.exr")
     );
 
 
@@ -156,7 +157,7 @@ export default function Road() {
   const roughness =
     useLoader(
       EXRLoader,
-      "/environment/road/asphalt_track_rough_4k.exr"
+      assetUrl("environment/road/asphalt_track_rough_4k.exr")
     );
 
 

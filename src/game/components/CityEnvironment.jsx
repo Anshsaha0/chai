@@ -1,3 +1,4 @@
+import { assetUrl } from "../../assetUrl.js";
 import {
   useMemo,
   useRef,
@@ -272,28 +273,28 @@ export default function CityEnvironment() {
       */}
 
       <CityBlock
-        path="/environment/city/city_left.glb"
+        path={assetUrl("environment/city/city_left.glb")}
         x={-18}
         z={-20}
         side="left"
       />
 
       <CityBlock
-        path="/environment/city/city_left.glb"
+        path={assetUrl("environment/city/city_left.glb")}
         x={-18}
         z={-62}
         side="left"
       />
 
       <CityBlock
-        path="/environment/city/city_left.glb"
+        path={assetUrl("environment/city/city_left.glb")}
         x={-18}
         z={-104}
         side="left"
       />
 
       <CityBlock
-        path="/environment/city/city_left.glb"
+        path={assetUrl("environment/city/city_left.glb")}
         x={-18}
         z={-146}
         side="left"
@@ -305,28 +306,28 @@ export default function CityEnvironment() {
       */}
 
       <CityBlock
-        path="/environment/city/city_right.glb"
+        path={assetUrl("environment/city/city_right.glb")}
         x={18}
         z={-20}
         side="right"
       />
 
       <CityBlock
-        path="/environment/city/city_right.glb"
+        path={assetUrl("environment/city/city_right.glb")}
         x={18}
         z={-62}
         side="right"
       />
 
       <CityBlock
-        path="/environment/city/city_right.glb"
+        path={assetUrl("environment/city/city_right.glb")}
         x={18}
         z={-104}
         side="right"
       />
 
       <CityBlock
-        path="/environment/city/city_right.glb"
+        path={assetUrl("environment/city/city_right.glb")}
         x={18}
         z={-146}
         side="right"
@@ -338,9 +339,9 @@ export default function CityEnvironment() {
 
 
 useGLTF.preload(
-  "/environment/city/city_left.glb"
+  assetUrl("environment/city/city_left.glb")
 );
 
 useGLTF.preload(
-  "/environment/city/city_right.glb"
+  assetUrl("environment/city/city_right.glb")
 );

@@ -1,3 +1,4 @@
+import { assetUrl } from "../assetUrl.js";
 import {
   useEffect,
   useRef,
@@ -12,10 +13,10 @@ import {
 import { useGameStore } from "../store/useGameStore.js";
 
 const MODEL_PATH =
-  "/models/face_landmarker.task";
+  assetUrl("models/face_landmarker.task");
 
 const WASM_PATH =
-  "/mediapipe-wasm";
+  assetUrl("mediapipe-wasm");
 
 /*
 Normal blinks should NOT trigger drowsiness.
